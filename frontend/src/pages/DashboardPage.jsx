@@ -141,6 +141,9 @@ export default function DashboardPage() {
                         {task.description}
                       </p>
                     )}
+                    <p className="text-xs text-gray-400">
+                      {new Date(task.created_at).toLocaleDateString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                    </p>
                   </div>
                 </div>
                 <button
