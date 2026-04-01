@@ -28,6 +28,17 @@
 **Audiencia:** Desarrolladores, QA y Scrum Masters
 **Prerequisito:** Haber completado el Día 1 (recorrida por herramientas, prompts básicos)
 
+### ETAPA 5: Frontend Lista de Tareas y CRUD — COMPLETADA
+**Resumen de lo realizado:**
+- DashboardPage reescrito con funcionalidad completa de tareas
+- Formulario inline para crear tarea (titulo + descripcion + boton agregar)
+- Lista de tareas obtenida desde GET /tasks
+- Checkbox para toggle completada (PUT /tasks/{id})
+- Boton eliminar (DELETE /tasks/{id})
+- Tareas completadas con line-through y texto gris
+- Loading state y mensaje de estado vacio ("No tenes tareas aun, crea una!")
+- Reutiliza api.js existente para todas las llamadas
+
 ### ETAPA 4: Frontend Login y Registro — COMPLETADA
 **Resumen de lo realizado:**
 - axios 1.14.0 y react-router-dom 7.13.2 instalados
