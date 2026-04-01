@@ -28,6 +28,17 @@
 **Audiencia:** Desarrolladores, QA y Scrum Masters
 **Prerequisito:** Haber completado el Día 1 (recorrida por herramientas, prompts básicos)
 
+### ETAPA 3: Backend CRUD de Tareas — COMPLETADA
+**Resumen de lo realizado:**
+- Migration tasks: id, user_id (FK cascade), title, description nullable, completed default false, timestamps
+- Modelo Task con fillable, cast completed->boolean, belongsTo User
+- StoreTaskRequest: title required|string|max:255, description nullable|string
+- UpdateTaskRequest: title sometimes, description nullable, completed sometimes|boolean
+- TaskController: index (tareas del usuario), store, update, destroy
+- Verificacion de ownership en update/destroy (403 si no es el dueno)
+- Ruta apiResource('tasks') excepto show, dentro del grupo auth:api
+- Migration ejecutada exitosamente
+
 ### ETAPA 2: Backend Auth con JWT — COMPLETADA
 **Resumen de lo realizado:**
 - tymon/jwt-auth v2.3.0 instalado via Composer
