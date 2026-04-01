@@ -28,6 +28,16 @@
 **Audiencia:** Desarrolladores, QA y Scrum Masters
 **Prerequisito:** Haber completado el Día 1 (recorrida por herramientas, prompts básicos)
 
+### ETAPA 2: Backend Auth con JWT — COMPLETADA
+**Resumen de lo realizado:**
+- tymon/jwt-auth v2.3.0 instalado via Composer
+- Config JWT publicada (config/jwt.php) con secret generado
+- Guard `api` con driver `jwt` agregado en config/auth.php
+- User model implementa JWTSubject + relacion tasks()
+- AuthController con: register, login, logout, me
+- Respuestas con formato consistente { data, message, status }
+- Rutas API: register/login publicas, logout/me protegidas con auth:api
+
 ---
 
 ## Contexto
