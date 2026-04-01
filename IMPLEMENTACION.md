@@ -28,6 +28,14 @@
 **Audiencia:** Desarrolladores, QA y Scrum Masters
 **Prerequisito:** Haber completado el Día 1 (recorrida por herramientas, prompts básicos)
 
+### ETAPA 6: Prueba End-to-End con Docker — COMPLETADA
+**Resumen de lo realizado:**
+- docker compose up --build exitoso, ambos containers corriendo
+- Backend en http://localhost:8000, Frontend en http://localhost:5173
+- Flujo E2E probado via API: registro, login, crear tarea, listar, completar, eliminar, logout
+- Rutas protegidas redirigen correctamente sin token
+- Todos los endpoints responden con formato { data, message, status }
+
 ### ETAPA 5: Frontend Lista de Tareas y CRUD — COMPLETADA
 **Resumen de lo realizado:**
 - DashboardPage reescrito con funcionalidad completa de tareas
