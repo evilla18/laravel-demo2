@@ -28,6 +28,11 @@
 **Audiencia:** Desarrolladores, QA y Scrum Masters
 **Prerequisito:** Haber completado el Día 1 (recorrida por herramientas, prompts básicos)
 
+### ETAPA 7: Documentacion (Cowork) — COMPLETADA
+**Resumen de lo realizado:**
+- README.md generado con: descripcion, stack, setup Docker y manual, endpoints API, estructura del proyecto, funcionalidades
+- IMPLEMENTACION.md actualizado con resumen de todas las etapas completadas
+
 ### ETAPA 6: Prueba End-to-End con Docker — COMPLETADA
 **Resumen de lo realizado:**
 - docker compose up --build exitoso, ambos containers corriendo
