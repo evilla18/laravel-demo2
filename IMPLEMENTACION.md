@@ -28,6 +28,18 @@
 **Audiencia:** Desarrolladores, QA y Scrum Masters
 **Prerequisito:** Haber completado el Día 1 (recorrida por herramientas, prompts básicos)
 
+### ETAPA 4: Frontend Login y Registro — COMPLETADA
+**Resumen de lo realizado:**
+- axios 1.14.0 y react-router-dom 7.13.2 instalados
+- api.js: axios instance con baseURL, interceptor Bearer token, helpers setToken/removeToken/getToken
+- AuthContext.jsx: AuthProvider (user, loading, login, register, logout), useAuth hook, ProtectedRoute
+- LoginPage.jsx: form email+password, error display, loading state, link a register
+- RegisterPage.jsx: form name+email+password+confirm, validacion client-side, server errors
+- DashboardPage.jsx: placeholder con saludo y boton logout
+- App.jsx: BrowserRouter, AuthProvider, Routes (login, register, dashboard protegido, catch-all)
+- Vite watch polling habilitado para Docker HMR
+- Verificado con Docker: backend y frontend corriendo, registro con JWT funcionando
+
 ### ETAPA 3: Backend CRUD de Tareas — COMPLETADA
 **Resumen de lo realizado:**
 - Migration tasks: id, user_id (FK cascade), title, description nullable, completed default false, timestamps
